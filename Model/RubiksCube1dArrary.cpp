@@ -2,10 +2,6 @@
 // Created by Ayush Agrawal on 02/11/25.
 //
 
-//
-// Created by Lakshya Mittal on 22-12-2021.
-//
-
 #include "GenericRubiksCube.h"
 
 class RubiksCube1dArray : public GenericRubiksCube {
