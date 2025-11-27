@@ -7,10 +7,12 @@
 
 #include<bits/stdc++.h>
 #include "../Model/GenericRubiksCube.h"
+#include "../PatternDatabases/CornerPatternDatabase.h"
 
 template<typename T, typename H>
 class IDAstarSolver {
 private:
+    CornerPatternDatabase cornerDB;
     vector<GenericRubiksCube::MOVE> moves;
     unordered_map<T, GenericRubiksCube::MOVE, H> move_done;
     unordered_map<T, bool, H> visited;
@@ -81,6 +83,7 @@ public:
 
     IDAstarSolver(T _rubiksCube, string fileName) {
         rubiksCube = _rubiksCube;
+        cornerDB.fromFile(fileName);
     }
 
     vector<GenericRubiksCube::MOVE> solve() {
