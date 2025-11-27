@@ -196,7 +196,7 @@ To allow:
 - Multiple cube models  
 - Zero duplicated logic  
 
- Acknowledgements
+## Acknowledgements
 
 Inspired by:
 
